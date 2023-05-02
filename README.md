@@ -2,7 +2,7 @@
 
 This is a project based on [CLIPasso](https://clipasso.github.io/clipasso/) and [RIFE](https://github.com/megvii-research/ECCV2022-RIFE). In this project, you can turn a vedio into an interesting simple stroke video.
 
-![np2v4-cazko](https://cdn.jsdelivr.net/gh/MYJOKERML/imgbed//taishi/output_64X_64fps.gif)
+![np2v4-cazko](./Docs/output_64X_64fps.gif)
 
 
 # How to use it
