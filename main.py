@@ -6,7 +6,7 @@ import cairosvg
 from PIL import Image
 
 abs_path = os.path.abspath(os.getcwd())
-print("The current working directory is " + f'"{abs_path}"')
+print("The current working directory is " + f'"{abs_path}"' + "\n")
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--target_file", type=str, default="none",
@@ -18,8 +18,14 @@ if (args.target_file == "none"):
     print("Please specify the target file")
     exit(0)
 
+
 vedio = args.target_file
 target = f"{abs_path}/input/"
+
+if not os.path.exists(target + vedio):
+    print(f"{target + vedio} does not exists!")
+    exit(0)
+
 cap = cv2.VideoCapture(target + vedio)
 print("read file: ", target + vedio)
 
